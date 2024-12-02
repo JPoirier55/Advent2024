@@ -10,7 +10,7 @@ const column2: number[] = []
 try {
     const data = fs.readFileSync(filePath, 'utf8')
     const lines = data.trim().split('\n')
-    lines.forEach((line) => {
+    lines.forEach((line: string) => {
         const [col1, col2] = line.trim().split(/\s+/).map(Number)
         column1.push(col1)
         column2.push(col2)

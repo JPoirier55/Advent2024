@@ -4,7 +4,7 @@ const args = process.argv.slice(2)
 console.log('Command-line arguments:', args)
 let test = false
 if (args[1] == 'test') test = true
-const filePath = test ? 'src/day2/test_input.txt' : 'src/day2/input.txt'
+const filePath = test ? 'src/inputs/day2_test_input.txt' : 'src/inputs/day2_input.txt'
 let lines: string[] = [];
 try {
     const data = fs.readFileSync(filePath, 'utf8')

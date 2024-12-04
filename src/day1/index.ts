@@ -4,7 +4,7 @@ const args = process.argv.slice(2)
 console.log('Command-line arguments:', args)
 var test = false
 if (args[1] == 'test') test = true
-const filePath = test ? 'src/day1/test_input.txt' : 'src/day1/input.txt'
+const filePath = test ? 'src/inputs/day1_test_input.txt' : 'src/inputs/day1_input.txt'
 const column1: number[] = []
 const column2: number[] = []
 try {
